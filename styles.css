@@ -1,0 +1,92 @@
+body {
+    background-color: #487eb0;
+}
+
+.game {
+    height: 100vh;
+}
+
+.score {
+    display: flex;
+    height: 20vh;
+    justify-content: space-around;
+    color: #e0f4f4;
+}
+
+.score h2 {
+  font-size: 2em;
+}
+
+.score p {
+  text-align: center;
+  font-size: 1.5em;
+  font-weight: 700;
+}
+
+.header {
+    display: flex;
+    height: 50vh;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    color: #e0f4f4;
+    transition: opacity 0.5s ease;
+}
+
+.header h1 {
+    font-size: 3em;
+}
+
+.header button,
+.match button {
+    width: 150px;
+    height: 50px;
+    background: none;
+    border: none;
+    border-radius: 3px;
+    font-size: 1.3em;
+    background-color: #273c75;
+    color: white;
+    cursor: pointer;
+}
+
+.match {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    transition: opacity 0.5s ease 0.5s;
+}
+
+.winner {
+    color: white;
+    text-align: center;
+    font-size: 2.5em;
+}
+
+.hands,
+.pick {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.hands img {
+    width: 150px;
+    height: 150px;
+    margin-bottom: 5vh;
+}
+
+.pick button {
+    margin: 5px;
+}
+
+div.fadeOut {
+  opacity: 0;
+  pointer-events: none;
+}
+
+div.fadeIn {
+  opacity: 1;
+  pointer-events: all;
+}
